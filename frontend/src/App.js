@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from "react";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import HomeScreen from "./screens/HomeScreen/HomeScreen";
+import MensCategory from "./screens/MensCategoryScreen/MensCategory";
+<style>
+  @import
+  url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;900&display=swap');
+</style>;
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route exact path="/" element={<HomeScreen />} />
+        <Route path="/mens" element={<MensCategory />} />
+      </Routes>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
