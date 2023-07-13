@@ -1,0 +1,32 @@
+.cardImage{
+    width: 100%;
+    height: 60%;
+}
+.productCard{
+    justify-self:center;
+    /* width: 100%; */
+}
+.randp span{
+    color: #E59819;
+}
+.randp{
+    padding: 0;
+    margin-top: -1rem;
+}
+.cardsubcategory{
+    padding: 0;
+    margin-top: 1rem;
+}
+.cardName{
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+    font-weight: bold;
+    border-bottom: 1px solid #e2e2e2;
+    width: 100%;
+    display: block;
+}
+.cardName:hover{
+    color: #4214CC;
+    transition: all 0.4s ease;
+}

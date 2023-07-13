@@ -1,0 +1,44 @@
+.pdesContainer {
+    display: flex;
+    padding: 3rem;
+    justify-content: space-between;
+    /* align-items: center; */
+  }
+  
+  .pdesImage {
+    flex: 0 0 auto;
+    width: 45%;
+    height: 80vh;
+    margin-right: 1rem;
+  }
+  
+  .pdesRight {
+    width: 50%;
+    /* flex: 1 1 auto; */
+  }
+  .pdesName{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+  }
+
+  .pdesCategory{
+    color: #a2a2a2;
+  }
+  .pdesBtn{
+    border: none;
+    outline: none;
+    padding: 1.1rem 5rem;
+    font-size: 1rem;
+    /* font-weight: bold; */
+    color: #fff;
+    background-color: #4214cc;
+    margin-top: 1rem;
+    cursor: pointer;
+
+  }
+  .pdesBtn:hover{
+    transform: translateY(-3px);
+    box-shadow: 10px 7px 10px #d2d2d2;
+    transition: all 0.4s ease;
+  }

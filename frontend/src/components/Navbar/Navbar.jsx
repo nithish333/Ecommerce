@@ -1,6 +1,6 @@
 import React from "react";
 import "./Navbar.css";
-import logo from "../../images/logo.png";
+import logo from "../../assets/logo.png";
 import { FaShoppingCart, FaUser, FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
 const Navbar = () => {

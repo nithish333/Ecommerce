@@ -1,8 +1,8 @@
 import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
-import men from "../../images/men.png";
-import women from "../../images/women.png";
-import accessories from "../../images/Accessories/Backpacks/punisher.webp";
+import men from "../../assets/men.png";
+import women from "../../assets/women.png";
+import accessories from "../../assets/Accessories/Backpacks/punisher.webp";
 import "./HomeScreen.css";
 import { Link } from "react-router-dom";
 const HomeScreen = () => {
@@ -13,13 +13,25 @@ const HomeScreen = () => {
         <div className="mens">
           <img src={men} alt="Men's clothing" className="headerImage" />
 
-          <Link to="/mens" className="btn link menslink">
+          <Link
+            to={{
+              pathname: "/mens",
+              state: { category: "mens" },
+            }}
+            className="btn link menslink"
+          >
             Shop Men
           </Link>
         </div>
         <div className="womens">
           <img src={women} alt="Women's clothing" className="headerImage" />{" "}
-          <Link to="/womens" className="btn link womenslink">
+          <Link
+            to={{
+              pathname: "/womens",
+              state: { category: "womens" },
+            }}
+            className="btn link womenslink"
+          >
             Shop Women
           </Link>
         </div>
@@ -30,7 +42,13 @@ const HomeScreen = () => {
             className="headerImage"
           />
 
-          <Link to="/accessories" className="btn link accessorieslink">
+          <Link
+            to={{
+              pathname: "/accessories",
+              state: { category: "accessories" },
+            }}
+            className="btn link accessorieslink"
+          >
             Shop Accessories
           </Link>
         </div>
