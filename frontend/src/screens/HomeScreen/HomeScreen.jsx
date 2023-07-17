@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import men from "../../assets/men.png";
 import women from "../../assets/women.png";
-import accessories from "../../assets/Accessories/Backpacks/punisher.webp";
+import accessories from "../../assets/punisher.webp";
 import "./HomeScreen.css";
 import { Link } from "react-router-dom";
 const HomeScreen = () => {

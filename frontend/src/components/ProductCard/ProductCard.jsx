@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import im from "../../assets/Mens/Jackets/avengers.webp";
+// import im from "../../assets/Mens/Jackets/avengers.webp";
 import "./ProductCard.css";
 import Ratings from "../Ratings/Ratings";
 
@@ -8,9 +8,9 @@ const ProductCard = ({ product }) => {
   const { ratings, price, subcategory, image } = product;
   return (
     <div className="productCard">
-      <img src={im} alt={product.name} className="cardImage" />
+      <img src={image} alt={product.name} className="cardImage" />
       <br />
-      <Link to={`/mens/tshirts/${product.id}`} className="cardName">
+      <Link to={`/mens/tshirts/${product._id}`} className="cardName">
         {product.name}
       </Link>
       <p className="cardsubcategory">{subcategory}</p>

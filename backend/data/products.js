@@ -1,13 +1,12 @@
 const products = [
   {
-    id: "1",
     name: "Avengers Jacket",
     description:
       "Marvel's favourite science bros, Tony Stark and Bruce Banner came together to create this beautiful quantum jacket to protect those travelling anywhere. Come together and suit up with our superheroes to fight Thanos and bring back all our loved ones.",
     brand: "Marvel",
-    image: "/assets/Mens/Jackets/avengers.jpg",
+    image: "/images/Mens/Jackets/avengers.webp",
     category: "Mens",
-    subcategory: "T-Shirts",
+    subcategory: "Tshirts",
     price: 450,
     stock: 45,
     ratings: 5,
@@ -15,9 +14,8 @@ const products = [
     sizes: ["S", "M", "XL", "XXL"],
   },
   {
-    id: "2",
     name: "Anime shirt",
-    image: "/assets/Mens/Shirts/animeshirt.jpg",
+    image: "/images/Mens/Shirts/animeshirt.jpg",
     brand: "Anime makers",
     description:
       "You cannot think about Marvel Comics without thinking of the good old Guardian of Freedom aka Captain America.Celebrate the vintage Captain America comics with this classic men's shirt.",
@@ -31,9 +29,8 @@ const products = [
     sizes: ["S", "M", "XL"],
   },
   {
-    id: "3",
     name: "Mumbai Indians Jackets",
-    image: "/assets/Mens/Jackets/mumbai.jpg",
+    image: "/images/Mens/Jackets/mi.webp",
     brand: "IPL",
     description:
       "Mumbai Indians jacket.Go wear it and support the men in blue out there",
@@ -47,9 +44,8 @@ const products = [
     sizes: ["S", "M"],
   },
   {
-    id: "4",
     name: "Anime shirt",
-    image: "/assets/Mens/Shirts/animeshirt.jpg",
+    image: "/images/Mens/Shirts/animeshirt.jpg",
     brand: "Anime makers",
     description:
       "You cannot think about Marvel Comics without thinking of the good old Guardian of Freedom aka Captain America.Celebrate the vintage Captain America comics with this classic men's shirt.",

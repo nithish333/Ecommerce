@@ -1,10 +1,10 @@
 import React from "react";
 import "./MensCategory.css";
 import Navbar from "../../components/Navbar/Navbar";
-import tshirt from "../../assets/Mens/T-shirts/rts.webp";
-import jackets from "../../assets/Mens/Jackets/header.jpg";
-import joggers from "../../assets/Mens/Joggers/avengers.webp";
-import shirts from "../../assets/Mens/Shirts/fl.webp";
+import tshirt from "../../assets/rts.webp";
+import jackets from "../../assets/header.jpg";
+import joggers from "../../assets/avengers.webp";
+import shirts from "../../assets/fl.webp";
 import { Link } from "react-router-dom";
 const MensCategory = ({ location }) => {
   // const { category } = location.state;

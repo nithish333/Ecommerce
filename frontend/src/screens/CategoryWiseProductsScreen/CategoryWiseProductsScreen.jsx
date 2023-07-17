@@ -1,10 +1,9 @@
 import React from "react";
 import "./CategoryWiseProductScreen.css";
 import Navbar from "../../components/Navbar/Navbar";
-import products from "../../data";
 import ProductCard from "../../components/ProductCard/ProductCard";
-import { useState, useEffect } from "react";
-import axios from "axios";
+import { useGetProductsQuery } from "../../slices/productsApiSlice";
+import Loader from "../../components/Loader/Loader";
 
 const CategoryWiseProductsScreen = () => {
   const pathname = window.location.pathname;
@@ -12,39 +11,40 @@ const CategoryWiseProductsScreen = () => {
 
   const category = pathParts[0];
   const subcategory = pathParts[1];
-
-  const [products, setProducts] = useState([]);
-
-  useEffect(() => {
-    const fetchProducts = async () => {
-      const { data } = await axios.get("/api/products");
-      console.log(data);
-    };
-    fetchProducts();
-  }, []);
+  const { data: products, isLoading, error } = useGetProductsQuery();
 
   return (
-    <div>
-      <Navbar />
-      <div
-        className="products"
-        style={{
-          padding: "3rem",
-          boxSizing: "border-box",
-          overflow: "hidden",
-        }}
-      >
-        {products
-          .filter(
-            (prod) =>
-              prod.category.toLowerCase() == category &&
-              prod.subcategory.toLowerCase() == subcategory
-          )
-          .map((p) => (
-            <ProductCard product={p} />
-          ))}
-      </div>
-    </div>
+    <>
+      {isLoading ? (
+        <Loader />
+      ) : error ? (
+        <div></div>
+      ) : (
+        <>
+          <Navbar />
+          <div
+            className="products"
+            style={{
+              padding: "3rem",
+              boxSizing: "border-box",
+              overflow: "hidden",
+            }}
+          >
+            {products.length > 0 ? (
+              products
+                .filter(
+                  (prod) =>
+                    prod.category.toLowerCase() === category &&
+                    prod.subcategory.toLowerCase() === subcategory
+                )
+                .map((p) => <ProductCard product={p} key={p._id} />)
+            ) : (
+              <h1>No products found</h1>
+            )}
+          </div>
+        </>
+      )}
+    </>
   );
 };
 
