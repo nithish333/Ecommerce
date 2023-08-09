@@ -42,3 +42,28 @@
     box-shadow: 10px 7px 10px #d2d2d2;
     transition: all 0.4s ease;
   }
+  .decBtn,.addBtn{
+    outline:none;
+    border:1px solid black;
+    /* padding:0.5rem 1rem; */
+    width:2rem;
+    height:2rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bolder;
+  }
+  .addBtn{
+    background-color: #4214cc;
+    color: #fff;
+  }
+  .qty{
+    margin: 0 1rem;
+    font-size: 1.2rem;
+  }
+  .dis{
+    background-color: #a2a2a2;
+    border: none;
+    cursor: not-allowed;
+  }

@@ -1,0 +1,37 @@
+.cartItemContainer{
+    display: flex;
+    display: space-between;
+    /* width: 100%; */
+}
+.cartItemContainer:not(:first-child){
+    margin-top: 2rem;
+}
+.cartLeft{
+    display: flex;
+    align-items:flex-start;
+    flex: 1;
+}
+.cartImage{
+    width: 10rem;
+    height: 12rem;
+}
+.cartText{
+    margin-left: 3rem;
+    
+}
+.cartNameLink{
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000;
+}
+.cartNameLink:hover{
+    color: #4214cc;
+}
+.cartRight{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.cartCategory{
+    color: #a2a2a2;
+}

@@ -50,3 +50,17 @@
     padding: 0.7rem 1.5rem;
     border-radius: 1.5rem;
 }
+.cartlink{
+    position: relative;
+    margin-right: 0.5rem;
+}
+.cartlinktext{
+    font-size: 0.5rem;
+    color: #fff;
+    background-color: #4214CC;
+    padding: 0.1rem 0.3rem;
+    border-radius: 1rem;
+    position: absolute;
+    top: -0.2rem;
+    right: -0.5rem;
+}

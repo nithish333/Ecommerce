@@ -8,6 +8,7 @@ import WomensCategory from "./screens/WomensCategory/WomensCategory";
 
 import { Provider } from "react-redux";
 import store from "../src/store";
+import CartScreen from "./screens/CartScreen/CartScreen";
 <style>
   @import
   url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;900&display=swap');
@@ -31,6 +32,7 @@ const App = () => {
             path="/:category/:subcategory/:id"
             element={<ProductDescription />}
           />
+          <Route path="/cart" element={<CartScreen />} />
         </Routes>
       </BrowserRouter>
     </Provider>
