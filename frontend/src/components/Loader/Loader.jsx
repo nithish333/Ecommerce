@@ -20,7 +20,7 @@ const Loader = () => {
         ariaLabel="three-dots-loading"
         wrapperStyle={{}}
         wrapperClassName=""
-        visible={true}
+        visible={false}
       />
     </div>
   );
